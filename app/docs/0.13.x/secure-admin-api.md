@@ -86,6 +86,7 @@ the `admin_listen` address as the Service's `url`. For example:
 
 $ curl -X POST http://localhost:8001/services \
   --data name=admin-api \
+  --data uris=/admin-api \
   --data upstream_url=http://localhost:8001
 
 $ curl -X POST http://localhost:8001/services/admin-api/routes
